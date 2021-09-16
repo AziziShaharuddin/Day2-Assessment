@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relap</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        div#container {
+            background-color: thistle;
+            width: 900px;
+            height: auto;
+            margin: 0px auto;
+        }
+        div.kepala {
+            width: 900px;
+            /* height: 45px; */
+            display: inline-block;
+            padding: 5px;
+            box-sizing: border-box;
+            background-color: rgba(73, 15, 112, 0.589);
+            color: white;
+        }
+        nav h3, nav ul, nav li, div.contact-us {
+            display: inline-block;
+            margin: 0%;
+        }
+        nav h3 {
+            font-size: 20px;
+            margin-right: 120px;
+            padding: 5px;
+        }
+        nav ul, nav li {
+            text-align: center;
+            margin-right: 20px;
+            padding: 5px;
+        }
+        div.contact-us {
+            width: 150px;
+            /* height: 50px; */
+            padding: 5px 0;
+            margin-right: 5px;
+            margin-left: 50px;
+            box-sizing: border-box;
+            background-color: transparent;
+            border: solid;
+            border-radius: 30px;
+            border-color: white;
+            text-align: center;
+            /* float: right; */
+        }
+        div.sectionone {
+            width: 900px;
+            height: 450px;
+            /* text-align: center; */
+            display: flex;
+            padding: 30px;
+            box-sizing: border-box;
+            background-color: rgb(173, 115, 170);
+        }
+        div.content {
+            color: white;
+            width: 40%;
+            height: auto;
+            text-align: left;
+            display: inline-block;
+            padding-top: 70px;
+        }
+        div.content h1 {
+            padding-bottom: 10px;
+        }
+        div.content p {
+            padding-bottom: 20px;
+        }
+        div.explore {
+            width: 120px;
+            height: 40px;
+            padding: 10px 0;
+            box-sizing: border-box;
+            background-color: rgb(245, 165, 17);
+            color: white;
+            border-radius: 30px;
+            text-align: center;
+        }
+        div.firstpage {
+            width: auto;
+            height: 600px;
+            display: flex;
+            margin-left: 30px;
+            overflow: hidden;
+        }
+        div.firstpage img {
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+        div.section2 {
+            background-color: rgb(247, 221, 247);
+            padding: 30px;
+            height: 450px;
+        }
+        div.kepala2 {
+            /* width: 40%; */
+            height: auto;
+            text-align: left;
+            display: flex;
+        }
+        div.ullam {
+            width: 40%;
+            height: auto;
+            /* display: flex; */
+            margin-right: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+        div.writeup {
+            width: 60%;
+            height: auto;
+            text-align: left;
+            margin-left: 50px;
+            display: flex;
+        }
+        div.description nav ul, nav li {
+            padding-top: 30px;
+        }
+        div.secondimage {
+            text-align: center;
+            width: 250px;
+            height: 200px;
+            margin-right: 20px;
+            display: inline-block;
+            overflow: hidden;
+        }
+        div.section3 {
+            height: 450px;
+            padding: 30px;
+            background-image: url(images/about_bg.png);
+            background-size: cover;
+            background-color: rgb(26, 13, 212);
+            display: flex;
+        }
+        div.contenttempo {
+            width: 40%;
+            height: auto;
+            text-align: left;
+            display: inline-block;
+            padding-top: 150px;
+            color: #ffffff;
+        }
+        div.contenttempo h2 {
+            padding: 10px 0;
+        }
+        div.thirdpage {
+            width: auto;
+            height: auto;
+            display: flex;
+            padding: 30px;
+            box-sizing: border-box;
+            /* margin-left: 30px; */
+            overflow: hidden;
+        }
+        div.thirdpage img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        div.section4 {
+            background-color: rgb(224, 224, 224);
+            padding: 30px;
+            height: 450px;
+            text-align: center;
+        }
+        div.kepala4 {
+            width: 50%;
+            height: auto;
+            margin: 0px auto;
+        }
+        div.kepala4 p {
+            padding: 10px 0;
+        }
+        div.fluqiat-row1 {
+            text-align: center;
+            /* padding: 30px;
+            box-sizing: border-box; */
+            display: inline-block;
+            margin: 10px 0;
+        }
+        div.fluqiat-row2 {
+            text-align: center;
+            /* padding: 30px;
+            box-sizing: border-box; */
+            display: inline-block;
+        }
+        div.fluqiat-list {
+            background-color: white;
+            text-align: center;
+            width: 200px;
+            height: 150px;
+            margin-right: 10px;
+            display: inline-block;
+            padding: 10px;
+            /* box-sizing: border-box;
+            box-shadow: 0px 0px 10px black; */
+            overflow: hidden;
+        }
+        div.fluqiat-list h4 {
+            padding: 10px 0;
+        }
+        div.fluqiat-list p {
+            font-size: 13px;
+        }
+        div.fluqiat-list img {
+            width: 30%;
+            height: 30%;
+        }
+        div.section5 {
+            background-color: rgb(255, 255, 255);
+            padding: 30px;
+            height: 450px;
+            text-align: center;
+        }
+        div.kepala5 {
+            width: 50%;
+            height: auto;
+            margin: 0px auto;
+        }
+        div.testimonial {
+            background-color: white;
+            text-align: left;
+            width: 250px;
+            height: 200px;
+            margin-right: 20px;
+            display: inline-block;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 15px rgb(223, 223, 223);
+            overflow: hidden;
+        }
+        div.testimonial img {
+            width: 25%;
+            height: 30%;
+        }
+        div.testimonial p {
+            padding: 10px 0;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="kepala">
+            <nav>
+                <h3>Relap</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Features</li>
+                    <li>Work</li>
+                    <li>About</li>
+                    <li>People</li>
+                    <li>News</li>
+                </ul>
+                <div class="contact-us">
+                    <p>Contact Us</p>
+                </div>
+            </nav>
+        </div>
+        <div class="sectionone">
+            <div class="content">
+                <h1>Omnis<br/>Voluptas</h1>
+                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et</p>
+                <div class="explore">
+                    <nav>
+                        <p>Explore</p>
+                    </nav>
+                </div>
+            </div>
+            <div class="firstpage">
+                <img src="images/banner_bg.png" />
+            </div>
+        </div>
+        <div class="section2">
+            <div class="kepala2">
+                <div class="ullam">
+                    <h6>Nisi ut aliquid</h6>
+                    <h2>Ullam corporis suscipit</h2>
+                </div>
+                <div class="writeup">
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequtour magni dolores eos qui ratione voluptasem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+            </div>
+            <div class="description">
+                <nav>
+                    <ul>
+                        <li>Quis Autem</li>
+                        <li>Rephrehenderit</li>
+                        <li>Voluptate</li>
+                        <li>Molestiae</li>
+                        <li>Consequator</li>
+                    </ul><br>
+                    <div class="secondimage">
+                        <img src="images/gallery_1.png" />
+                    </div>
+                    <div class="secondimage">
+                        <img src="images/gallery_2.png" />
+                    </div>
+                    <div class="secondimage">
+                        <img src="images/gallery_3.png" />
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="thirdpage">
+                <img src="images/about_img.png" />
+            </div>
+            <div class="contenttempo">
+                <p>Repellendus</p>
+                <h2>Temporibus quibusdam</h2>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime pleaceat facare possimus</p>
+            </div>
+        </div>
+        <div class="section4">
+            <div class="kepala4">
+                <h2>Fugiat quo</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+            </div>
+            <div class="fluqiat-row1">
+                <div class="fluqiat-list">
+                    <img src="images/icon_1.png" />
+                    <h4>Consequuntur</h4>
+                    <p>Enim ipsam voluptatem quia voluptas sit aspernasa asd tur aut odit au</p>
+                </div>
+                <div class="fluqiat-list">
+                    <img src="images/icon_2.png" />
+                    <h4>Consequuntur</h4>
+                    <p>Enim ipsam voluptatem quia voluptas sit aspernasa asd tur aut odit au</p>
+                </div>
+                <div class="fluqiat-list">
+                    <img src="images/icon_3.png" />
+                    <h4>Consequuntur</h4>
+                    <p>Enim ipsam voluptatem quia voluptas sit aspernasa asd tur aut odit au</p>
+                </div>
+            </div>
+            <div class="fluqiat-row2">
+                <div class="fluqiat-list">
+                    <img src="images/icon_4.png" />
+                    <h4>Consequuntur</h4>
+                    <p>Enim ipsam voluptatem quia voluptas sit aspernasa asd tur aut odit au</p>
+                </div>
+                <div class="fluqiat-list">
+                    <img src="images/icon_5.png" />
+                    <h4>Consequuntur</h4>
+                    <p>Enim ipsam voluptatem quia voluptas sit aspernasa asd tur aut odit au</p>
+                </div>
+                <div class="fluqiat-list">
+                    <img src="images/icon_6.png" />
+                    <h4>Consequuntur</h4>
+                    <p>Enim ipsam voluptatem quia voluptas sit aspernasa asd tur aut odit au</p>
+                </div>
+            </div>
+        </div>
+        <div class="section5">
+            <div class="kepala5">
+                <h4>Testimonial</h4>
+                <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/profile_1.png" />
+                <p>"Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis"</p>
+                <h4>Malin Quist</h4>
+            </div>
+            <div class="testimonial">
+                <img src="images/profile_2.png" />
+                <p>"Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis"</p>
+                <h4>Malin Quist</h4>
+            </div>
+            <div class="testimonial">
+                <img src="images/profile_3.png" />
+                <p>"Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis"</p>
+                <h4>Malin Quist</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
